@@ -1,5 +1,5 @@
 {
-  "name": "runabhy---ai-photo-editor",
+  "name": "runabhii---ai-photo-editor",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@google/genai": "^1.28.0",
-    "react-dom": "^19.2.0",
-    "react": "^19.2.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

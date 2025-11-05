@@ -133,7 +133,7 @@ export default function App() {
     if (!generatedImage) return;
     const link = document.createElement('a');
     link.href = generatedImage;
-    link.download = 'runabhy-creation.png';
+    link.download = 'runabhii-creation.png';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -148,13 +148,13 @@ export default function App() {
     try {
       const response = await fetch(generatedImage);
       const blob = await response.blob();
-      const file = new File([blob], 'runabhy-creation.png', { type: blob.type });
+      const file = new File([blob], 'runabhii-creation.png', { type: blob.type });
 
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
           files: [file],
           title: 'My AI Creation!',
-          text: 'Check out this photo I made with Runabhy AI Photo Editor!',
+          text: 'Check out this photo I made with Runabhii AI Photo Editor!',
         });
       } else {
         setError("Sharing this file type is not supported on your device.");
@@ -176,7 +176,7 @@ export default function App() {
       <div className="w-full max-w-4xl mx-auto">
         <header className="text-center mb-8">
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 tracking-tight">
-                Runabhy <span className="text-indigo-500">AI Photo Editor</span>
+                Runabhii <span className="text-indigo-500">AI Photo Editor</span>
             </h1>
             <p className="mt-3 text-lg text-slate-600 max-w-2xl mx-auto">
                 Upload two photos and watch Gemini magically blend them into a loving pose with a soft, clean background.
